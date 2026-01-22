@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row mb-5 text-center">
+    <h1 class="display-3 fw-bold text-white">🎬 Select Movie for Feedback</h1>
+    <p class="lead fs-2 text-white-50">{{ movies|length }} movies available</p>
+</div>
+
+<div class="row g-4">
+    {% for movie in movies %}
+    <div class="col-lg-6 col-xl-4">
+        <div class="card glass-effect h-100 shadow-lg">
+            <div class="card-body p-5 text-center">
+                <i class="fas fa-film fa-3x text-warning mb-4"></i>
+                <h3 class="text-white fw-bold mb-3">{{ movie.title }}</h3>
+                <p class="text-white-50 mb-4">{{ movie.description }}</p>
+                <div class="mb-4">
+                    <span class="badge bg-success fs-4 px-4 py-2">⭐ {{ "%.1f"|format(movie.average_rating) }}</span>
+                    <span class="ms-3 fs-5 text-white">{{ movie.total_reviews }} reviews</span>
+                </div>
+                <a href="{{ url_for('feedback', movie_id=movie.id) }}" class="btn btn-primary btn-lg w-100 py-3 fw-bold">
+                    Give Feedback →
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

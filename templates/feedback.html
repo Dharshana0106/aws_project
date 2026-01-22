@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="glass-effect p-5 shadow-lg mb-5 text-center">
+            <h1 class="text-white fw-bold mb-4">{{ movie.title }}</h1>
+            <p class="text-white-50 mb-4">{{ movie.description }}</p>
+        </div>
+        <div class="glass-effect p-5 shadow-lg">
+            <h2 class="text-white fw-bold mb-4">Your Feedback</h2>
+            <form method="POST">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input type="text" name="username" class="form-control form-control-lg" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12">
+                        <select name="rating" class="form-select form-select-lg" required>
+                            <option value="">Select Rating</option>
+                            <option value="5">⭐⭐⭐⭐⭐ 5 Stars</option>
+                            <option value="4">⭐⭐⭐⭐ 4 Stars</option>
+                            <option value="3">⭐⭐⭐ 3 Stars</option>
+                            <option value="2">⭐⭐ 2 Stars</option>
+                            <option value="1">⭐ 1 Star</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="comments" class="form-control form-control-lg" rows="4" placeholder="Your comments..."></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success btn-lg w-100 py-4 fs-5 fw-bold">Submit Feedback</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

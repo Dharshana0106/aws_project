@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass-effect p-5 shadow-lg">
+    <h1 class="text-white fw-bold mb-4">🔧 Admin Dashboard</h1>
+    <h3 class="text-white mb-4">All Feedbacks ({{ feedbacks|length }})</h3>
+    <div class="table-responsive">
+        <table class="table table-dark table-hover">
+            <thead><tr><th>Movie</th><th>User</th><th>Rating</th><th>Comments</th><th>Date</th></tr></thead>
+            <tbody>
+                {% for feedback in feedbacks %}
+                <tr>
+                    <td><strong>{{ feedback.movie_title }}</strong></td>
+                    <td>{{ feedback.username }}</td>
+                    <td><span class="badge bg-warning">⭐ {{ feedback.rating }}</span></td>
+                    <td>{{ feedback.comments[:50] }}{% if feedback.comments|length > 50 %}...{% endif %}</td>
+                    <td>{{ feedback.created_at }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
+
+
+

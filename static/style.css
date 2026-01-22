@@ -1,0 +1,86 @@
+/* body {
+    background: linear-gradient(135deg, #85217c 0%, #992a93 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass-effect {
+    background: rgba(231, 173, 173, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-size: 1.8rem !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #f5c518 !important; /* IMDb gold */
+/* } */ 
+body {
+    background: linear-gradient(135deg, #05050a 0%, #0b0b18 50%, #000000 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eaeaff;
+}
+
+/* Glass stays glass – just darker & neon-tinted */
+.glass-effect {
+    background: rgba(20, 20, 35, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 245, 255, 0.25);
+    border-radius: 20px;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.7),
+        0 0 25px rgba(0,245,255,0.15);
+}
+
+/* Cards – same shape, neon edge */
+.card {
+    background: linear-gradient(145deg, #0c0c18, #000000);
+    border: 1px solid rgba(120, 0, 255, 0.18);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.8),
+        0 0 35px rgba(120,0,255,0.6);
+}
+
+/* Navbar brand – subtle neon */
+.navbar-brand {
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    color: #00f5ff !important;
+    text-shadow: 0 0 12px rgba(0,245,255,0.7);
+}
+
+/* Nav links – clean neon hover */
+.nav-link {
+    color: #d1d1ff !important;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #00f5ff !important;
+    text-shadow: 0 0 10px rgba(0,245,255,0.8);
+}

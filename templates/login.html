@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+    }
+</style>
+<div class="row justify-content-center min-vh-100 align-items-center py-5">
+    <div class="col-md-6 col-lg-5">
+        <div class="glass-effect shadow-lg p-5" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; color: #ffffff;">
+            <h1 class="display-4 fw-bold text-white text-center mb-5" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">🎬 CinemaPulse</h1>
+            <form method="POST">
+                <div class="mb-4">
+                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" required 
+                           style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #ffffff; backdrop-filter: blur(5px);">
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.3); height: 1px; margin-top: 5px;"></div>
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" required 
+                           style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #ffffff; backdrop-filter: blur(5px);">
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.3); height: 1px; margin-top: 5px;"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold" 
+                        style="background: linear-gradient(45deg, #ff6b6b, #feca57); border: none; color: #1a1a2e; box-shadow: 0 8px 25px rgba(255,107,107,0.4);">Login</button>
+            </form>
+            <div class="alert alert-info mt-4" style="background: rgba(13,202,240,0.2); border: 1px solid rgba(13,202,240,0.4); color: #e3f2fd;">
+                <strong>User:</strong> <a href="mailto:user@cinemapulse.com" style="color: #bbdefb;">user@cinemapulse.com</a> / user123<br>
+                <strong>Admin:</strong> <a href="mailto:admin@cinemapulse.com" style="color: #bbdefb;">admin@cinemapulse.com</a> / admin123
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
