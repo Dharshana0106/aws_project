@@ -38,6 +38,7 @@ Database: SQLite3
 Icons: Font Awesome
 
 **Styling:** Glassmorphism + Gradient UI
+
 📊**Database Tables**
 
 users – login & roles
@@ -59,6 +60,7 @@ Responsive layout
 Animated buttons
 
 Live rating badges ⭐
+
 📌 **Future Enhancements**
 
 Password hashing (security)
