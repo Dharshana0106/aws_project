@@ -1,10 +1,11 @@
-🎬 CinemaPulse – Real-Time Movie Feedback System
+**🎬 CinemaPulse – Real-Time Movie Feedback System**
 
 CinemaPulse is a Flask-based web application that allows users to rate movies and submit feedback while providing real-time analytics for admins.
 It features a modern glassmorphism UI, role-based login (User/Admin), and dynamic rating updates using SQLite.
 
-🚀 Features
-👤 User Features
+**🚀 Features**
+
+**👤 User Features**
 
 Secure login system
 
@@ -16,7 +17,7 @@ View updated average ratings instantly
 
 Beautiful theatre-style UI
 
-🔧 Admin Features
+🔧 **Admin Features**
 
 Admin-only dashboard
 
@@ -26,7 +27,7 @@ See ratings, comments, and timestamps
 
 Monitor customer sentiment easily
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
 Backend: Python (Flask)
 
@@ -36,8 +37,8 @@ Database: SQLite3
 
 Icons: Font Awesome
 
-Styling: Glassmorphism + Gradient UI
-📊 Database Tables
+**Styling:** Glassmorphism + Gradient UI
+📊**Database Tables**
 
 users – login & roles
 
@@ -47,7 +48,7 @@ feedbacks – user feedback & comments
 
 Average ratings are calculated automatically after each submission.
 
-🎨 UI Highlights
+🎨 **UI Highlights**
 
 Glassmorphism cards
 
@@ -58,3 +59,19 @@ Responsive layout
 Animated buttons
 
 Live rating badges ⭐
+📌 **Future Enhancements**
+
+Password hashing (security)
+
+User registration
+
+Movie posters
+
+Charts & analytics
+
+Deployment on Render / Vercel
+
+👨‍💻 **Author**
+
+Dharshana P C
+Bsc Computer Science
