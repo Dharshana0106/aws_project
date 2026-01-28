@@ -76,4 +76,7 @@ Deployment on Render / Vercel
 👨‍💻 **Author**
 
 Dharshana P C
+
 Bsc Computer Science
+
+India
