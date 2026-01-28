@@ -1,15 +1,28 @@
-{% extends "base.html" %}
-{% block content %}
-<div class="row min-vh-100 align-items-center justify-content-center text-center">
-    <div class="col-md-8">
-        <div class="glass-effect p-5 shadow-lg">
-            <div class="display-1 text-success mb-4">✅</div>
-            <h1 class="display-3 fw-bold text-white mb-4">Thank You!</h1>
-            <p class="lead fs-3 text-white-50 mb-5">Your feedback for "{{ movie.title }}" is recorded!</p>
-            <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg px-5 py-3 fs-4 fw-bold">Review More Movies</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You! - CinemaPulse</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .success-box { background: #d4edda; border: 1px solid #c3e6cb; border-radius: 8px; padding: 20px; text-align: center; }
+        .movie-title { color: #dc3545; font-size: 24px; font-weight: bold; }
+        .btn { background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 10px; display: inline-block; }
+        .btn-logout { background: #dc3545; }
+        .btn-home { background: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h1>🎬 Thank You!</h1>
+        <p>Your feedback for <span class="movie-title">{{ movie.title }}</span> has been recorded!</p>
+        
+        <div style="margin: 20px 0;">
+            <a href="{{ url_for('home') }}" class="btn btn-home">🏠 Back to Home</a>
+            <a href="{{ url_for('logout') }}" class="btn btn-logout">🚪 Logout</a>
         </div>
     </div>
-</div>
-{% endblock %}
+</body>
+</html>
+
 
 
