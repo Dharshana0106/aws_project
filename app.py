@@ -52,7 +52,10 @@ def init_db():
         ("Maargan", "Vijay Antony's crime-mystery with supernatural detective edges."),
         ("Ace ", "Vijay Sethupathi as a crime-busting anti-hero in high-stakes action-noir."),
         ("Narivettai ", "Tovino Thomas in a revenge-fueled crime probe."),
-        ("Indra", " Vasanth Ravi's suspenseful pursuit through betrayal webs.")
+        ("Indra", " Vasanth Ravi's suspenseful pursuit through betrayal webs."),
+        ("Sleepwalker","Psychological thriller about a mother caught in grief and blurred reality after her daughters loss."),
+        ("28 Years Later: The Bone Temple","A post-apocalyptic survival horror sequel that follows humanity struggle to survive decades after a devastating global outbreak."),
+        ("Return to Silent Hill","Horror film based on the classic video game franchise Silent Hill with atmospheric thrills.")
     ]
     c.executemany("INSERT INTO movies (title, description) VALUES (?, ?)", movies)
     
@@ -61,7 +64,7 @@ def init_db():
     
     conn.commit()
     conn.close()
-    print("✅ 12 HOT 2026 MOVIES LOADED!")
+    print("✅ 15 HOT 2026 MOVIES LOADED!")
     print("👤 USER: user@cinemapulse.com / user123")
     print("🔧 ADMIN: admin@cinemapulse.com / admin123")
 
@@ -158,6 +161,7 @@ if __name__ == '__main__':
     init_db()
     print("\n🚀 http://localhost:5000")
     app.run(debug=True)
+
 
 
 

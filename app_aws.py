@@ -124,8 +124,28 @@ def init_dynamodb():
                 'description': "Vasanth Ravi's suspenseful pursuit through betrayal webs.",
                 'average_rating': 0.0,
                 'total_reviews': 0
-            }
-        ]
+            },
+            {
+                'id': str(uuid.uuid4()),
+                'title': 'Sleepwalker',
+                'description': "Psychological thriller about a mother caught in grief and blurred reality after her daughters loss.",
+                'average_rating': 0.0,
+                'total_reviews': 0
+            },
+            {
+                'id': str(uuid.uuid4()),
+                'title': '28 Years Later: The Bone Temple',
+                'description': "A post-apocalyptic survival horror sequel that follows humanity struggle to survive decades after a devastating global outbreak.",
+                'average_rating': 0.0,
+                'total_reviews': 0
+            },
+            {
+                'id': str(uuid.uuid4()),
+                'title': 'Return to Silent Hill',
+                'description': "Horror film based on the classic video game franchise Silent Hill with atmospheric thrills.",
+                'average_rating': 0.0,
+                'total_reviews': 0  
+            }]
         
         # Check if movies exist, if not create them
         movies_scan = movies_table.scan()
