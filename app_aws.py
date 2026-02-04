@@ -22,7 +22,7 @@ movies_table = dynamodb.Table('CinemaPulseMovies')
 feedbacks_table = dynamodb.Table('CinemaPulseFeedbacks')
 
 # SNS Topic ARN - Replace with your actual ARN
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:604665149129:cinemapulse_topic' 
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:715841340702:aws_captone_topic' 
 
 def send_notification(subject, message):
     """Send SNS notification for user actions"""

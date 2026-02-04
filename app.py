@@ -41,7 +41,7 @@ def init_db():
     
     # 🔥 12 HOTTEST 2026 MOVIES
     movies = [
-        ("Parashakthi", "Sivakarthikeyan's historical action epic about brothers clashing during Tamil Nadu's 1965 Anti-Hindi protests, directed by Sudha Kongara."),
+        ("Parashakthi", "Sivakarthikeyan's historical action epic about brothers clashing during Tamil Nadu's 1965 Anti-Hindi protests, directed by Sudha Kongara.",),
         ("Lara ", " Ashok Kumar hunts a mysterious killer amid corruption—pure detective noir suspense."),
         ("Eleven", "Skilled officer tackles brutal serial killings with psychological twists."),
         ("Kaantha ", "1950s Madras mystery blending social drama and hidden crimes."),
